@@ -1,0 +1,81 @@
+{
+    "categories": [
+        {
+            "name": "AI & Machine Learning",
+            "items": {
+                "libraries": [
+                    "NumPy"
+                ],
+                "concepts": [
+                    "RAG",
+                    "Vector Search",
+                    "Cosine Similarity"
+                ],
+                "algorithms": [
+                    "HNSW Indexing"
+                ],
+                "platforms": [
+                    "Gemini AI",
+                    "Ollama"
+                ]
+            },
+            "visibility": "public"
+        },
+        {
+            "name": "Backend & Data",
+            "items": {
+                "languages": [
+                    "Python"
+                ],
+                "frameworks": [
+                    "FastAPI",
+                    "Node.js"
+                ],
+                "databases": [
+                    "PostgreSQL",
+                    "Supabase",
+                    "SQL"
+                ],
+                "infrastructure": [
+                    "Docker",
+                    "Upstash Redis",
+                    "QStash"
+                ]
+            },
+            "visibility": "public"
+        },
+        {
+            "name": "Frontend",
+            "items": {
+                "frameworks": [
+                    "Next.js",
+                    "React"
+                ],
+                "languages": [
+                    "TypeScript",
+                    "JavaScript",
+                    "C",
+                    "Java"
+                ],
+                "styling": [
+                    "Tailwind CSS",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            "visibility": "public"
+        },
+        {
+            "name": "Core Engineering",
+            "items": [
+                "Data Structures & Algorithms",
+                "Object-Oriented Programming",
+                "REST APIs",
+                "Git",
+                "GitHub",
+                "Vercel"
+            ],
+            "visibility": "public"
+        }
+    ]
+}

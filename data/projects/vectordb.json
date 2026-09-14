@@ -1,0 +1,17 @@
+{
+    "project_id": "vectordb",
+    "name": "VectorDB Engine",
+    "tagline": "Custom AI Search & RAG Pipeline",
+    "duration": "January 2026 - March 2026",
+    "visibility": "public",
+    "tech_stack": [
+        "Python",
+        "FastAPI",
+        "NumPy",
+        "Docker",
+        "Ollama",
+        "HNSW",
+        "RAG"
+    ],
+    "documentation_file": "vectordb.md"
+}

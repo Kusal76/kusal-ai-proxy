@@ -1,0 +1,26 @@
+{
+  "email": {
+    "value": "kusaldey2004@gmail.com",
+    "visibility": "public"
+  },
+  "phone": {
+    "value": "+91 74396 89051",
+    "visibility": "private"
+  },
+  "linkedin": {
+    "value": "https://www.linkedin.com/in/kusal-dey-b938a0241",
+    "visibility": "public"
+  },
+  "github": {
+    "value": "https://github.com/Kusal76",
+    "visibility": "public"
+  },
+  "leetcode": {
+    "value": "https://leetcode.com/u/Kusal_Dey/",
+    "visibility": "public"
+  },
+  "hackerrank": {
+    "value": "https://www.hackerrank.com/profile/kusaldey2004",
+    "visibility": "public"
+  }
+}

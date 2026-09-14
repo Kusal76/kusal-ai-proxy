@@ -1,0 +1,18 @@
+{
+    "project_id": "stockeasy",
+    "name": "StockEasy",
+    "tagline": "Cloud-Native Pharmacy Management SaaS",
+    "duration": "May 2026 - July 2026",
+    "visibility": "public",
+    "tech_stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "PostgreSQL (Supabase)",
+        "Upstash Redis",
+        "QStash",
+        "Gemini AI",
+        "Tailwind CSS"
+    ],
+    "documentation_file": "stockeasy.md"
+}

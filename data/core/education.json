@@ -1,0 +1,44 @@
+{
+    "degrees": [
+        {
+            "degree": "B.Tech in Information Technology",
+            "institution": "Narula Institute of Technology",
+            "duration": "July 2023 - Present",
+            "expected_graduation": "2027",
+            "score": "8.94/10 CGPA up to 6th semester",
+            "visibility": "public"
+        },
+        {
+            "degree": "Higher Secondary (Class XII), CBSE",
+            "institution": "Army Public School, Barrackpore",
+            "duration": "2021 - 2022",
+            "score": "80.80%",
+            "visibility": "public"
+        },
+        {
+            "degree": "Secondary (Class X), CBSE",
+            "institution": "Army Public School, Barrackpore",
+            "duration": "2019 - 2020",
+            "score": "91.60%",
+            "visibility": "public"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+            "visibility": "public"
+        },
+        {
+            "name": "NPTEL Introduction to Machine Learning - Top 1% Elite Certification",
+            "visibility": "public"
+        },
+        {
+            "name": "SAP Certified - Back-End Developer - ABAP Cloud",
+            "visibility": "public"
+        },
+        {
+            "name": "NPTEL Programming in Java",
+            "visibility": "public"
+        }
+    ]
+}
