@@ -446,7 +446,7 @@ export default function PortfolioChat() {
 
     return (
         <div
-            className={`flex h-screen overflow-hidden transition-colors duration-300 ${bg} ${primaryText}`}
+            className={`flex h-screen min-h-screen h-[100dvh] overflow-hidden overscroll-none transition-colors duration-300 ${bg} ${primaryText}`}
         >
 
             {/* =====================================================
@@ -711,7 +711,7 @@ export default function PortfolioChat() {
                 <div
                     className={`mt-auto border-t px-5 py-4 ${border}`}
                 >
-                    <div className="grid grid-cols-3 gap-2">
+                    <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
 
                         <a
                             href="https://github.com/Kusal76"
@@ -766,10 +766,10 @@ export default function PortfolioChat() {
 
                 {/* Header */}
                 <header
-                    className={`flex h-[72px] shrink-0 items-center justify-between border-b px-5 sm:px-7 ${surface} ${border}`}
+                    className={`flex min-h-[68px] shrink-0 items-center justify-between gap-3 border-b px-3 sm:px-5 lg:px-7 ${surface} ${border}`}
                 >
-                    <div>
-                        <div className="flex items-center gap-2">
+                    <div className="min-w-0 flex-1">
+                        <div className="flex min-w-0 items-center gap-2">
                             <h2 className="text-[17px] font-semibold tracking-tight">
                                 Kusal&apos;s AI Proxy
                             </h2>
@@ -791,14 +791,14 @@ export default function PortfolioChat() {
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex shrink-0 items-center gap-1 sm:gap-2">
 
                         {/* Resume */}
                         <a
                             href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`inline-flex items-center gap-2 rounded-lg border px-2.5 py-1.5 text-[11px] font-semibold transition sm:px-3 ${isDark
+                            className={`inline-flex shrink-0 items-center gap-2 rounded-lg border px-2.5 py-1.5 text-[11px] font-semibold transition sm:px-3 ${isDark
                                 ? "border-blue-800 bg-blue-950/40 text-blue-300 hover:bg-blue-900/50"
                                 : "border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100"
                                 }`}
@@ -825,7 +825,7 @@ export default function PortfolioChat() {
                             href="https://github.com/Kusal76"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`rounded-lg p-2 transition ${isDark
+                            className={`hidden rounded-lg p-2 transition sm:inline-flex ${isDark
                                 ? "text-gray-500 hover:bg-gray-800 hover:text-gray-200"
                                 : "text-gray-400 hover:bg-gray-100 hover:text-gray-800"
                                 }`}
@@ -841,7 +841,7 @@ export default function PortfolioChat() {
                                     (prev) => !prev
                                 )
                             }
-                            className={`rounded-lg p-2 transition ${isDark
+                            className={`hidden rounded-lg p-2 transition sm:inline-flex ${isDark
                                 ? "text-yellow-400 hover:bg-gray-800"
                                 : "text-gray-500 hover:bg-gray-100 hover:text-gray-800"
                                 }`}
@@ -880,7 +880,7 @@ export default function PortfolioChat() {
         ===================================================== */}
 
                 <main className="min-h-0 flex-1 overflow-y-auto">
-                    <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-5 py-7 sm:px-8 sm:py-8">
+                    <div className="mx-auto flex w-full max-w-6xl min-w-0 flex-col gap-4 px-3 py-5 sm:gap-5 sm:px-8 sm:py-8">
 
                         {messages.map(
                             (msg, idx) => (
@@ -893,7 +893,7 @@ export default function PortfolioChat() {
                                 >
 
                                     <div
-                                        className={`flex max-w-[96%] gap-3 sm:max-w-[90%] ${msg.role === "user"
+                                        className={`flex min-w-0 max-w-[calc(100%-0.75rem)] gap-2.5 sm:max-w-[90%] sm:gap-3 ${msg.role === "user"
                                             ? "flex-row-reverse"
                                             : "flex-row"
                                             }`}
@@ -925,9 +925,9 @@ export default function PortfolioChat() {
 
                                         {/* Message */}
                                         <div
-                                            className={`rounded-2xl ${msg.role === "user"
-                                                ? "bg-blue-600 px-4 py-3 text-white shadow-sm"
-                                                : `border px-6 py-5 shadow-sm ${isDark
+                                            className={`min-w-0 max-w-full overflow-hidden rounded-2xl ${msg.role === "user"
+                                                ? "bg-blue-600 px-3.5 py-2.5 text-white shadow-sm sm:px-4 sm:py-3"
+                                                : `border px-4 py-4 shadow-sm sm:px-6 sm:py-5 ${isDark
                                                     ? "border-gray-800 bg-[#111827]"
                                                     : "border-gray-200 bg-white"
                                                 }`
@@ -936,13 +936,13 @@ export default function PortfolioChat() {
 
                                             {msg.role ===
                                                 "user" ? (
-                                                <p className="whitespace-pre-wrap text-sm leading-6">
+                                                <p className="whitespace-pre-wrap break-words text-sm leading-6 sm:text-sm">
                                                     {msg.content}
                                                 </p>
                                             ) : msg.content ? (
                                                 <>
                                                     <div
-                                                        className={`prose prose-sm max-w-none leading-relaxed ${isDark
+                                                        className={`prose prose-sm max-w-none break-words overflow-x-auto leading-relaxed ${isDark
                                                             ? "prose-invert"
                                                             : ""
                                                             }`}
@@ -1020,11 +1020,11 @@ export default function PortfolioChat() {
                 <footer
                     className={`shrink-0 border-t ${surface} ${border}`}
                 >
-                    <div className="mx-auto w-full max-w-6xl px-5 py-4 sm:px-8">
+                    <div className="mx-auto w-full max-w-6xl px-3 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:px-8 sm:py-4">
 
                         {/* Quick Actions */}
                         <div className="mb-3 overflow-x-auto">
-                            <div className="flex w-max min-w-full items-center justify-center gap-2">
+                            <div className="flex w-max items-center justify-start gap-2 px-1 sm:w-full sm:justify-center">
 
                                 {quickActions.map(
                                     (action) => (
@@ -1174,17 +1174,17 @@ export default function PortfolioChat() {
                                         ? "Paste the complete Job Description here..."
                                         : "Ask about Kusal, or paste a Job Description..."
                                 }
-                                className={`w-full resize-none border-0 bg-transparent px-3 py-2 pr-14 text-sm outline-none placeholder:text-gray-400 disabled:opacity-50 ${isDark
+                                className={`w-full max-h-60 resize-none overflow-y-auto border-0 bg-transparent px-3 py-2 pr-12 text-sm leading-6 outline-none placeholder:text-gray-400 disabled:opacity-50 ${isDark
                                     ? "text-gray-100"
                                     : "text-gray-900"
                                     }`}
                             />
 
 
-                            <div className="flex items-center justify-between px-2 pb-1">
+                            <div className="flex min-w-0 items-center justify-between gap-2 px-2 pb-1">
 
                                 <div
-                                    className={`flex items-center gap-1.5 text-[10px] ${muted}`}
+                                    className={`min-w-0 max-w-[78%] flex items-center gap-1.5 truncate text-[10px] ${muted}`}
                                 >
                                     <FileText size={11} />
 
@@ -1197,7 +1197,7 @@ export default function PortfolioChat() {
                                 </div>
 
                                 <span
-                                    className={`hidden text-[10px] ${faint} sm:block`}
+                                    className={`hidden shrink-0 text-[10px] ${faint} sm:block`}
                                 >
                                     Enter to send · Shift + Enter for new line
                                 </span>
