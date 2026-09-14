@@ -1197,7 +1197,7 @@ export default function PortfolioChat() {
                                 </div>
 
                                 <span
-                                    className={`hidden shrink-0 text-[10px] ${faint} sm:block`}
+                                    className={`hidden min-w-0 flex-1 truncate pr-10 text-right text-[10px] ${faint} sm:block`}
                                 >
                                     Enter to send · Shift + Enter for new line
                                 </span>
