@@ -2,6 +2,7 @@
     "project_id": "vectordb",
     "name": "VectorDB Engine",
     "tagline": "Custom AI Search & RAG Pipeline",
+    "project_type": "Custom Vector Database and Local RAG Pipeline",
     "duration": "January 2026 - March 2026",
     "visibility": "public",
     "tech_stack": [
@@ -13,5 +14,155 @@
         "HNSW",
         "RAG"
     ],
+    "overview": {
+        "value": "VectorDB Engine is a custom vector database and local RAG pipeline implemented in Python. The project focuses on vector search, approximate nearest-neighbor indexing, embeddings, retrieval, and RAG without relying on a managed vector database service.",
+        "visibility": "public"
+    },
+    "github": {
+        "url": "https://github.com/Kusal76/custom-vectordb-engine",
+        "visibility": "public"
+    },
+    "core_capabilities": {
+        "items": [
+            "Semantic vector search",
+            "Cosine similarity",
+            "Custom HNSW indexing",
+            "Hybrid search",
+            "Local RAG",
+            "Local inference through Ollama",
+            "Docker-based deployment"
+        ],
+        "visibility": "public"
+    },
+    "architecture": {
+        "api_layer": {
+            "technology": [
+                "FastAPI",
+                "Uvicorn"
+            ],
+            "purpose": "Exposes vector search and RAG functionality through REST endpoints."
+        },
+        "vector_processing": {
+            "technology": "NumPy",
+            "purpose": "Handles operations involving embedding vectors."
+        },
+        "embedding": {
+            "technology": "Ollama",
+            "model": "all-minilm",
+            "output_dimension": 384,
+            "purpose": "Converts source text and user queries into 384-dimensional embedding vectors."
+        },
+        "generation": {
+            "technology": "Ollama",
+            "model": "tinydolphin",
+            "purpose": "Generates answers using retrieved context in the local RAG pipeline."
+        },
+        "indexing": {
+            "technology": "Custom HNSW",
+            "purpose": "Provides approximate nearest-neighbor search over the stored embedding vectors."
+        },
+        "deployment": {
+            "technology": "Docker",
+            "communication": "The containerized application communicates with the host-level Ollama process through host.docker.internal."
+        },
+        "visibility": "public"
+    },
+    "data_flow": {
+        "ingestion": [
+            "bulk_import.py reads the source data.",
+            "Source content is divided into chunks.",
+            "Ollama generates 384-dimensional embeddings for the chunks.",
+            "The vectors are inserted into the custom HNSW index."
+        ],
+        "query_processing": [
+            "The user's question is converted into a 384-dimensional query vector.",
+            "HNSW searches the graph for approximate nearest-neighbor candidates.",
+            "Candidate results are refined using cosine similarity.",
+            "Hybrid keyword scoring can improve exact-name or identifier matching.",
+            "Retrieved context is added to the RAG prompt.",
+            "The local LLM generates the final response."
+        ],
+        "visibility": "public"
+    },
+    "hnsw": {
+        "full_name": "Hierarchical Navigable Small World",
+        "type": "Graph-based approximate nearest-neighbor indexing method",
+        "implementation": "Custom implementation built from scratch in Python",
+        "features": [
+            "Layer assignment",
+            "Graph connections",
+            "Neighbor selection",
+            "Hierarchical navigation",
+            "Approximate nearest-neighbor search"
+        ],
+        "search_behavior": "Search starts from an upper-level entry point and moves toward lower layers to identify candidate neighbors.",
+        "visibility": "public"
+    },
+    "search": {
+        "semantic_search": {
+            "method": "Vector similarity search",
+            "similarity_measure": "Cosine similarity"
+        },
+        "hybrid_search": {
+            "method": "Combines vector similarity with exact-match keyword scoring.",
+            "purpose": "Helps improve relevance when specific identifiers, names, or exact terms should receive additional weight."
+        },
+        "visibility": "public"
+    },
+    "rag": {
+        "type": "Local Retrieval-Augmented Generation",
+        "flow": [
+            "Retrieve relevant chunks",
+            "Provide retrieved chunks as context",
+            "Generate the final answer using the local language model"
+        ],
+        "visibility": "public"
+    },
+    "privacy": {
+        "value": "The embedding and generation pipeline runs locally through Ollama rather than relying on a managed external vector database service.",
+        "visibility": "public"
+    },
+    "key_engineering_decisions": {
+        "build_hnsw_from_scratch": {
+            "reason": "Building the index from scratch provided an opportunity to understand the underlying mechanics of approximate nearest-neighbor indexing instead of relying entirely on a pre-built HNSW library."
+        },
+        "ollama": {
+            "reason": "Ollama allows the embedding and generation components to run locally."
+        },
+        "docker": {
+            "reason": "Docker provides a consistent environment for running the API and vector-search components."
+        },
+        "hybrid_search": {
+            "reason": "Semantic similarity supports conceptual matching, while exact keyword matching can help prioritize specific identifiers and names."
+        }
+    },
+    "performance": {
+        "reported_latency": "Sub-10 ms query latency",
+        "measurement_scope": "Custom HNSW search under the benchmark conditions documented for the project.",
+        "visibility": "public"
+    },
+    "recruiter_context": {
+        "technical_highlights": [
+            "Custom HNSW implementation",
+            "Vector search",
+            "Approximate nearest-neighbor indexing",
+            "Cosine similarity",
+            "Hybrid search",
+            "Local embeddings",
+            "Local LLM inference",
+            "Retrieval-Augmented Generation",
+            "Docker-based deployment"
+        ],
+        "demonstrates": [
+            "Python development",
+            "Vector search engineering",
+            "Approximate nearest-neighbor indexing",
+            "RAG implementation",
+            "Backend API development",
+            "AI infrastructure understanding",
+            "Algorithmic problem solving"
+        ],
+        "visibility": "public"
+    },
     "documentation_file": "vectordb.md"
 }

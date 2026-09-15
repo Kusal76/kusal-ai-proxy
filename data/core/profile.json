@@ -7,12 +7,24 @@
     "value": "Software Developer | AI, ML & Full-Stack Engineering",
     "visibility": "public"
   },
+  "current_status": {
+    "value": "B.Tech Information Technology undergraduate at Narula Institute of Technology",
+    "visibility": "public"
+  },
   "summary": {
     "value": "B.Tech Information Technology undergraduate with a strong foundation in software development, full-stack development, backend engineering, Data Structures & Algorithms, databases, and AI-driven applications. Kusal has built projects including an offline RAG pipeline with a custom vector database and a multi-tenant pharmacy management SaaS platform. His technical background includes Python, Java, C, SQL, Next.js, Node.js, FastAPI, PostgreSQL, Supabase, REST APIs, Docker, and Git.",
     "visibility": "public"
   },
   "location": {
     "value": "Barrackpore, Kolkata - 700122",
+    "visibility": "public"
+  },
+  "hobbies_interests": {
+    "value": [
+      "Photography",
+      "Cricket",
+      "Football"
+    ],
     "visibility": "public"
   },
   "career_focus": {
@@ -25,6 +37,17 @@
       "Software Developer",
       "Backend Engineer",
       "Full-Stack Developer"
+    ],
+    "visibility": "public"
+  },
+  "professional_interests": {
+    "value": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Generative AI",
+      "Software Engineering",
+      "Backend Engineering",
+      "Full-Stack Development"
     ],
     "visibility": "public"
   }

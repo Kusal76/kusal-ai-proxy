@@ -9,7 +9,9 @@
                 "concepts": [
                     "RAG",
                     "Vector Search",
-                    "Cosine Similarity"
+                    "Cosine Similarity",
+                    "Semantic Search",
+                    "Embeddings"
                 ],
                 "algorithms": [
                     "HNSW Indexing"
@@ -25,7 +27,8 @@
             "name": "Backend & Data",
             "items": {
                 "languages": [
-                    "Python"
+                    "Python",
+                    "SQL"
                 ],
                 "frameworks": [
                     "FastAPI",
@@ -33,8 +36,7 @@
                 ],
                 "databases": [
                     "PostgreSQL",
-                    "Supabase",
-                    "SQL"
+                    "Supabase"
                 ],
                 "infrastructure": [
                     "Docker",
@@ -53,9 +55,7 @@
                 ],
                 "languages": [
                     "TypeScript",
-                    "JavaScript",
-                    "C",
-                    "Java"
+                    "JavaScript"
                 ],
                 "styling": [
                     "Tailwind CSS",
@@ -63,6 +63,18 @@
                     "CSS"
                 ]
             },
+            "visibility": "public"
+        },
+        {
+            "name": "Programming Languages",
+            "items": [
+                "Python",
+                "Java",
+                "C",
+                "JavaScript",
+                "TypeScript",
+                "SQL"
+            ],
             "visibility": "public"
         },
         {

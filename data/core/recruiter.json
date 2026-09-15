@@ -1,0 +1,117 @@
+{
+    "professional_positioning": {
+        "professional_introduction": {
+            "value": "Kusal Dey is a B.Tech Information Technology undergraduate at Narula Institute of Technology with a strong foundation in Java, Python, C, Data Structures & Algorithms, Object-Oriented Programming and DBMS. He has also worked with React, Next.js, Node.js, FastAPI and SQL-based databases, and has built projects including a custom VectorDB Engine and a multi-tenant pharmacy management SaaS.",
+            "visibility": "public"
+        },
+        "candidate_summary": {
+            "value": "Kusal combines strong programming and computer science fundamentals with practical project experience in AI-driven applications, backend engineering, full-stack development, vector search and RAG.",
+            "visibility": "public"
+        },
+        "professional_differentiators": {
+            "value": [
+                "Hands-on implementation of a custom HNSW-based VectorDB Engine",
+                "Practical experience building an offline RAG pipeline",
+                "Experience building a multi-tenant pharmacy management SaaS application",
+                "Combination of AI/ML, backend, database, full-stack and DSA foundations"
+            ],
+            "visibility": "public"
+        }
+    },
+    "strengths": {
+        "items": [
+            "Problem solving",
+            "Analytical thinking",
+            "Learning quickly",
+            "Understanding how different system components work together",
+            "Building practical applications"
+        ],
+        "visibility": "public"
+    },
+    "weakness": {
+        "value": "Earlier, Kusal sometimes spent too much time trying to make an implementation perfect. He has been improving this by first building a working solution within a time limit and then refining it.",
+        "visibility": "public"
+    },
+    "motivation": {
+        "value": "Kusal enjoys solving problems and building practical applications.",
+        "visibility": "public"
+    },
+    "learning": {
+        "learning_approach": {
+            "value": "Kusal is comfortable learning new technologies, understanding how different components work together, and solving problems step by step.",
+            "visibility": "public"
+        },
+        "learning_mindset": {
+            "value": "Kusal is willing to learn new technologies and adapt to changing technical requirements.",
+            "visibility": "public"
+        }
+    },
+    "career": {
+        "primary_roles": [
+            "AI Engineer",
+            "Machine Learning Engineer",
+            "Generative AI / GenAI"
+        ],
+        "secondary_roles": [
+            "Software Developer",
+            "Backend Engineer",
+            "Full-Stack Developer"
+        ],
+        "career_direction": {
+            "value": "Kusal's current career direction is centered on AI, Machine Learning and Generative AI, while maintaining a strong software engineering foundation.",
+            "visibility": "public"
+        },
+        "engineering_goal": {
+            "value": "Kusal wants to become a strong technical professional who can understand systems deeply, solve engineering problems and build practical AI-enabled software.",
+            "visibility": "public"
+        }
+    },
+    "hiring": {
+        "why_hire": {
+            "value": "Kusal has a strong foundation in programming and computer science fundamentals and has also built practical projects. He is comfortable learning new technologies, understanding how components work together and solving problems step by step.",
+            "visibility": "public"
+        },
+        "value_to_organization": {
+            "value": "Kusal can contribute through his programming fundamentals, problem-solving ability, practical project experience and willingness to learn new technologies.",
+            "visibility": "public"
+        },
+        "candidate_fit": {
+            "value": "Kusal is best positioned for entry-level roles aligned with AI/ML, GenAI, software development, backend engineering or full-stack development.",
+            "visibility": "public"
+        }
+    },
+    "work_preferences": {
+        "learning_new_technologies": {
+            "value": "Yes. Kusal is comfortable learning technologies outside his current skill set when required by a role.",
+            "visibility": "public"
+        },
+        "assigned_technology": {
+            "value": "Kusal is comfortable learning and working with technologies outside his current stack when required by the role.",
+            "visibility": "public"
+        }
+    },
+    "projects_positioning": {
+        "practical_experience": {
+            "value": "Kusal's practical engineering experience is demonstrated primarily through his technical projects, including the VectorDB Engine and StockEasy.",
+            "visibility": "public"
+        },
+        "technical_problem_solving": {
+            "value": "Kusal has demonstrated technical problem-solving through DSA practice and project work involving custom vector search, HNSW indexing, RAG and multi-tenant application architecture.",
+            "visibility": "public"
+        }
+    },
+    "behavioral": {
+        "handling_unknowns": {
+            "value": "Kusal should not bluff when he does not know something. The appropriate approach is to acknowledge the gap, explain what he does understand, and learn or investigate the missing part.",
+            "visibility": "public"
+        },
+        "handling_disagreement": {
+            "value": "Kusal should explain the reasoning behind his technical approach, discuss the trade-offs involved and remain open to alternative approaches when another solution is technically stronger.",
+            "visibility": "public"
+        },
+        "resume_defensibility": {
+            "value": "Kusal's projects and technical skills are intended to be explainable from an implementation perspective, with project-specific claims grounded in the actual project documentation.",
+            "visibility": "public"
+        }
+    }
+}
